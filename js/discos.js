@@ -5,7 +5,7 @@ const discos = [
         anio: 1972,
         etapa: "sui",
         nombreEtapa: "SUI GENERIS",
-        portada: "img/discos/vida",
+        portada: "img/discos/vida.jpg",
         descripcion: "El primer álbum de estudio de Sui Generis. Un trabajo fundamental para el desarrollo del rock argentino, con canciones que retratan experiencias, emociones y situaciones de la juventud.",
         canciones: [
             "Canción para mi muerte",
@@ -148,6 +148,8 @@ const discos = [
 // =====================================
 
 const galeria = document.querySelector("#galeria-discos");
+console.log("Ruta de la imagen:", discos[0].portada);
+console.log("Galería encontrada:", galeria);
 
 const buscador = document.querySelector("#buscador-discos");
 
