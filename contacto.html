@@ -39,5 +39,129 @@
             </div>
         </nav>
     </header>
-    
+  <!-- CONTENIDO PRINCIPAL -->
+    <main class="contacto-contenedor">
+
+        <section class="contacto-intro">
+
+            <p class="etiqueta">CHARLY GARCÍA / CONTACTO</p>
+
+            <h1>HABLEMOS<span>.</span></h1>
+
+            <p class="contacto-descripcion">
+                ¿Tenés alguna consulta, sugerencia o comentario sobre el sitio?
+                Completá el formulario y dejanos tu mensaje.
+            </p>
+
+        </section>
+
+
+        <!-- FORMULARIO -->
+        <section class="contacto-formulario">
+
+            <div class="formulario-encabezado">
+                <h2>ENVIANOS TU MENSAJE</h2>
+                <p>Todos los campos son obligatorios.</p>
+            </div>
+
+            <form id="formulario-contacto" novalidate>
+
+                <!-- NOMBRE -->
+                <div class="campo-formulario">
+
+                    <label for="nombre">NOMBRE COMPLETO</label>
+
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Escribí tu nombre"
+                    >
+
+                    <small class="error-mensaje" id="error-nombre"></small>
+
+                </div>
+
+
+                <!-- EMAIL -->
+                <div class="campo-formulario">
+
+                    <label for="email">CORREO ELECTRÓNICO</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="ejemplo@correo.com"
+                    >
+
+                    <small class="error-mensaje" id="error-email"></small>
+
+                </div>
+
+
+                <!-- MOTIVO -->
+                <div class="campo-formulario">
+
+                    <label for="motivo">MOTIVO DEL CONTACTO</label>
+
+                    <select id="motivo" name="motivo">
+
+                        <option value="">Seleccioná una opción</option>
+                        <option value="Consulta">Consulta</option>
+                        <option value="Sugerencia">Sugerencia</option>
+                        <option value="Información">Información</option>
+                        <option value="Otro">Otro</option>
+
+                    </select>
+
+                    <small class="error-mensaje" id="error-motivo"></small>
+
+                </div>
+
+
+                <!-- MENSAJE -->
+                <div class="campo-formulario">
+
+                    <label for="mensaje">MENSAJE</label>
+
+                    <textarea
+                        id="mensaje"
+                        name="mensaje"
+                        rows="6"
+                        placeholder="Escribí tu mensaje..."
+                    ></textarea>
+
+                    <small class="error-mensaje" id="error-mensaje"></small>
+
+                </div>
+
+
+                <!-- BOTÓN -->
+                <button type="submit" class="boton-enviar">
+                    ENVIAR MENSAJE <span>→</span>
+                </button>
+
+
+                <!-- RESPUESTA -->
+                <div id="respuesta-formulario" aria-live="polite"></div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>CHARLY GARCÍA — SITIO WEB INFORMATIVO</p>
+        <p>EL ROCK COMO FORMA DE EXPRESIÓN</p>
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="contacto.js"></script>
+
 </body>
+</html>

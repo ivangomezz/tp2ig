@@ -1043,3 +1043,216 @@ footer p {
 
 }
 
+
+
+/* ==========================
+   PÁGINA DE CONTACTO
+========================== */
+
+.contacto-contenedor {
+    width: 85%;
+    max-width: 1100px;
+    margin: 100px auto;
+}
+
+
+/* INTRODUCCIÓN */
+
+.contacto-intro {
+    max-width: 750px;
+    margin-bottom: 70px;
+}
+
+.etiqueta {
+    color: var(--rojo);
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+.contacto-intro h1 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: clamp(55px, 9vw, 100px);
+    line-height: 1;
+    margin-bottom: 30px;
+}
+
+.contacto-intro h1 span {
+    color: var(--rojo);
+}
+
+.contacto-descripcion {
+    color: #bdbdbd;
+    font-size: 17px;
+    line-height: 1.7;
+    max-width: 600px;
+}
+
+
+/* FORMULARIO */
+
+.contacto-formulario {
+    max-width: 750px;
+    background-color: #1c1c1c;
+    padding: 45px;
+    border-top: 4px solid var(--rojo);
+    margin-bottom: 100px;
+}
+
+.formulario-encabezado {
+    margin-bottom: 40px;
+}
+
+.formulario-encabezado h2 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.formulario-encabezado p {
+    color: #999;
+    font-size: 14px;
+}
+
+
+/* CAMPOS */
+
+.campo-formulario {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 28px;
+}
+
+.campo-formulario label {
+    color: var(--crema);
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.campo-formulario input,
+.campo-formulario select,
+.campo-formulario textarea {
+    width: 100%;
+    background-color: #111;
+    border: 1px solid #444;
+    color: var(--crema);
+    padding: 15px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.campo-formulario input:focus,
+.campo-formulario select:focus,
+.campo-formulario textarea:focus {
+    border-color: var(--rojo);
+}
+
+.campo-formulario input::placeholder,
+.campo-formulario textarea::placeholder {
+    color: #777;
+}
+
+.campo-formulario select {
+    cursor: pointer;
+}
+
+.campo-formulario select option {
+    background-color: #1c1c1c;
+}
+
+.campo-formulario textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+
+/* ERRORES DE VALIDACIÓN */
+
+.error-mensaje {
+    color: var(--rojo);
+    font-size: 12px;
+    margin-top: 8px;
+    min-height: 15px;
+}
+
+.campo-formulario .campo-invalido {
+    border-color: var(--rojo);
+}
+
+
+/* BOTÓN */
+
+.boton-enviar {
+    background-color: var(--rojo);
+    color: #111;
+    border: none;
+    padding: 17px 25px;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.boton-enviar span {
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.boton-enviar:hover {
+    background-color: var(--crema);
+    transform: translateY(-3px);
+}
+
+
+/* MENSAJE DE RESPUESTA */
+
+#respuesta-formulario {
+    margin-top: 25px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.mensaje-exito {
+    color: #8bd69b;
+    background-color: #183522;
+    padding: 15px;
+    border-left: 3px solid #8bd69b;
+}
+
+.mensaje-error {
+    color: #ff7770;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .contacto-contenedor {
+        width: 90%;
+        margin: 65px auto;
+    }
+
+    .contacto-intro {
+        margin-bottom: 45px;
+    }
+
+    .contacto-formulario {
+        padding: 25px;
+    }
+
+    .formulario-encabezado h2 {
+        font-size: 20px;
+    }
+
+    .contacto-descripcion {
+        font-size: 15px;
+    }
+
+}
